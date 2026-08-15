@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "new";
+  /* src: url(fonts/B\ Ziba_0.ttf); */
+  src: url(fonts/webfonts/Vazirmatn-Medium.woff2);
+}
+@font-face {
+  font-family: "funy";
+  src: url(../fonts/B\ Ziba_0.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration-line: none;
+}
+
+/* nav bar style */
+.navbar {
+  background: linear-gradient(to bottom, #3bc9f5, #dcf3f5ab);
+  display: grid;
+  /* background-color: #91dcf3; */
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: 0fr 0.8fr;
+  /* position: fixed;
+  z-index: 999;
+  width: 100%; */
+}
+.navbar p {
+  font-family: "new";
+  margin-right: 2rem;
+  font-weight: 500;
+  align-self: center;
+  font-size: large;
+}
+
+input[type="search"] {
+  border: none;
+  border-radius: 1.5rem;
+  font-size: medium;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  outline: none;
+  font-family: "new";
+}
+
+#singin,
+#buy {
+  background-color: white;
+  border: 0.01px solid rgb(255, 255, 255);
+  border-radius: 1rem;
+  margin-left: 2rem;
+  width: 6rem;
+  font-family: "new";
+  font-size: smaller;
+  cursor: pointer;
+  height: 2rem;
+  justify-self: end;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+#singin:hover,
+#buy:hover {
+  transform: scale(1.02);
+}
+#buycontant {
+  grid-column: 3/4;
+  justify-items: center;
+  justify-self: end;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* nav bar items style */
+.nav-items {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  justify-items: center;
+  align-self: end;
+}
+.nav-items a {
+  font-family: "new";
+  font-size: smaller;
+  color: black;
+  transition: 0.3 ease-in-out;
+}
+.nav-items a:hover {
+  transform: translateY(2px);
+}
+
+/*herosection  */
+@media only screen and (max-width: 600px) {
+  .herosection {
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+  }
+  #herosection-link a {
+    width: 100%;
+    font-size: small;
+  }
+}
+.herosection {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  /* padding-top: 8rem; */
+}
+#herosection-imags {
+  flex: 1;
+}
+#herosection-imags img {
+  width: 60%;
+  margin-right: 8rem;
+}
+#herosection-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#slogan {
+  font-family: "new";
+  font-weight: 200;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+}
+#title {
+  font-family: "new";
+  font-size: x-large;
+}
+#herosection-link {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+#herosection-link a {
+  font-family: "new";
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: rgb(7, 167, 7);
+}
+#herosection-link a:hover {
+  background-color: rgb(5, 136, 5);
+}
+
+/* prodactcards */
+#proudectbar-title {
+  background: linear-gradient(to bottom, #91dcf3, #dcf3f5ab);
+  padding: 0.5rem 2rem;
+  font-family: "new";
+  font-size: larger;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+#proudectCard {
+  background-color: rgba(114, 197, 230, 0.705);
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+#proudectCard a {
+  color: black;
+  font-family: "new";
+  padding-top: 0.5rem;
+  display: block;
+  margin-right: 0.5rem;
+  transition: 0.4s ease-in-out;
+}
+#proudectCard a:hover {
+  transform: translateX(-3px);
+}
+#proudectCard a:link {
+  text-decoration: none;
+}
+#proudectCard p {
+  font-family: "new";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+#proudectCard img {
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+#buyButton {
+  border: none;
+  background-color: rgba(114, 108, 108, 0.3);
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.75rem;
+  font-family: "new";
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#buyButton:hover {
+  transform: scale(1.03);
+  background-color: rgba(236, 234, 234, 0.705);
+}
+
+/* ADS SECTION */
+#adscontaner {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  margin: 1rem auto;
+  gap: 1rem;
+  padding-top: 1rem;
+  grid-row: 1/5;
+}
+#adscontaner div img {
+  border-radius: 1rem;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+#adscontaner div:nth-child(5) {
+  background-color: rgb(223, 221, 224);
+  grid-column: 1/5;
+  justify-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-family: "new";
+  font-weight: 300;
+}
+.adsitems a img:hover {
+  transform: scale(1.05);
+}
+/* footer */
+.footer {
+  background: linear-gradient(to bottom, #0b0b0b, #212323ab);
+  color: white;
+  font-family: "new";
+  padding: 2rem;
+  display: flex;
+}
+.footer a {
+  color: white;
+}
+.footer li:hover {
+  color: rgb(72, 174, 229);
+}
+footer div {
+  flex: 1;
+}
+#footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#footer-logo p {
+  width: 60%;
+}
+#footer-link a svg {
+  width: 30px;
+}
+.footer ul {
+  display: inline-block;
+}
+::marker {
+}
+
+/* product page style */
+.product {
+  width: 80%;
+  margin: 2rem auto;
+}
+#productbox {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product h4 {
+  font-size: x-large;
+  font-weight: 700;
+  font-family: "funy";
+  padding: 1rem 0.5rem;
+}
+
+/* contact us style */
+#contactcountainar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.form {
+  border-radius: 1rem;
+  background-color: #91dcf3;
+  padding: 1rem;
+  width: 40%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+#contactcountainar h2 {
+  font-family: "new";
+  font-weight: 400;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form div:nth-child(6) {
+  grid-column: 1/3;
+}
+textarea {
+  resize: none;
+}
+
+.form label {
+  font-family: "new";
+  font-weight: 300;
+}
+
+.form input,
+textarea {
+  outline: none;
+  border: 0.5px solid gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  direction: rtl;
+}
+input[type="reset"],
+input[type="submit"] {
+  background-color: rgb(4, 150, 4);
+  font-family: "new";
+  border: none;
+  font-size: medium;
+}
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
+}

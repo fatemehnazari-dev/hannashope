@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "new";
+  src: url(../fonts/webfonts/Vazirmatn-Medium.woff2);
+}
+
+.prdcard {
+  font-family: "new";
+}
+.prdcardimg {
+  background-color: rgba(153, 147, 147, 0.3);
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.prdcardimg img {
+  border-radius: 1rem;
+}
+.prdcardtxt {
+  font-family: "new";
+  padding: 1rem;
+  width: 80%;
+  border-radius: 1rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  background-color: rgba(153, 147, 147, 0.3);
+}
+.prdcardtxt h4,
+p {
+  margin: 0;
+  margin-bottom: 0.7rem;
+}
+.prdcardtxt h4 {
+  font-size: 20px;
+}
+.prdcardtxt p {
+  display: inline-block;
+  font-size: small;
+  font-weight: 500;
+}
+#about {
+  margin-bottom: 1rem;
+}
+.comments {
+  background-color: rgb(243, 217, 217);
+  margin-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 3rem;
+  margin-top: 2rem;
+}
+
+.comments p {
+  margin-right: 2rem;
+  font-family: "new";
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.comments ul{
+  margin-right: 3rem;
+}
+#buyButton {
+  border: none;
+  background-color: rgba(114, 108, 108, 0.3);
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.75rem;
+  font-family: "new";
+  cursor: pointer;
+}
+
+#buyButton:hover {
+  background-color: rgba(153, 147, 147, 0.3);
+}
+.wholePage {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+}
+.main {
+  grid-column: 1/4;
+}
+.asidebar p {
+  color: #fff;
+  padding-right: 1rem;
+  background-color: rgba(88, 88, 88, 0.534);
+  width: 40%;
+  font-size: 17px;
+  /* padding-right: 2rem; */
+  font-family: "new";
+  text-align: start;
+  font-size: medium;
+}
+
+.asidebar a {
+  text-decoration-line: none;
+  color: #080808;
+  font-family: "new";
+  font-size: small;
+  display: inline-block;
+}
+.asidebar li:hover {
+  display: inline-block;
+  transform: translateX(-2px);
+  transition: 0.3s ease-in-out;
+}
+::marker{
+  color: rgba(0, 128, 0, 0);
+}
+#links div {
+  padding: 0.5rem 0rem;
+}
+.asidebar ul {
+  margin-bottom: 1rem;
+}
+.asidebar {
+  padding-top: 1rem;
+}
